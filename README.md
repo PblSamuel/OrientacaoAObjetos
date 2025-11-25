@@ -107,54 +107,54 @@ Regex - Regex é a abreviação de expressões regulares
     Este é um site para testar o regex: https://regex101.com/
 
 coleções e streams
-Coleções
-    Os arrays são basicamente uma construção de baixo nível, em que ele tem uma inflexibilidade em alguns aspectos, por isso damos prioridade para o uso das coleções(Colections) do Java
-        List, Set e Map.
-            List:
-                Permite ordenação e duplicidade
-                Implementações: ArrayList e LinkedList
-                    Usamos ArrayList quando queremos realizar buscas rápidas. 
-                    Já o LinkedList é preferido quando fazemos muitas inserções e remoções.
-                As operações mais comuns ao utilizar esse tipo de coleção são:
-                    .add        para adicionar um elemento;
-                    .remove     para remover;
-                    .contains   para verificar se um elemento existe na lista;
-                    .get        para obter um elemento em uma posição específica e
-                    .size       para saber o tamanho total da lista. 
-            Set:
-                O Set é usado quando a ordenação não é o foco. Ele não permite duplicidade, então não poderíamos ter dois "João". 
-                As implementações do Set incluem:
-                    HashSet, LinkedHashSet e TreeSet.
-                        O HashSet é o mais rápido, pois não se preocupa com ordenação e não permite duplicidade. O LinkedHashSet mantém a ordem de inserção, enquanto o TreeSet permite ordenação, mas é mais lento.
+    Coleções
+        Os arrays são basicamente uma construção de baixo nível, em que ele tem uma inflexibilidade em alguns aspectos, por isso damos prioridade para o uso das coleções(Colections) do Java
+            List, Set e Map.
+                List:
+                    Permite ordenação e duplicidade
+                    Implementações: ArrayList e LinkedList
+                        Usamos ArrayList quando queremos realizar buscas rápidas. 
+                        Já o LinkedList é preferido quando fazemos muitas inserções e remoções.
                     As operações mais comuns ao utilizar esse tipo de coleção são:
-                    .add        para adicionar um elemento;
-                    .remove     para remover;
-                    .contains   para verificar se um elemento existe na lista;
-                    .get        para obter um elemento em uma posição específica e
-                    .size       para saber o tamanho total da lista. 
-            Map:
-                O objetivo é semelhante ao do Set. O HashMap é o mais rápido e não considera a ordem. 
-                    O LinkedHashMap mantém a ordem de inserção, e o TreeMap é ordenado pela chave. 
-                    No Map, o primeiro item é a chave e o segundo é o valor.
-                Ele possui operações diferentes dos anteriores, como:
-                    .Put;
-                    .Get;
-                    .Remove;
-                    .ContainsKey e
-                    .keySet.
-Streams
-    Streams permite realizar operações funcionais e processar essas coleções(colections) de forma funcional.
-        Ao trabalhar com a API de Streams, geralmente desejamos utilizar métodos para realizar filtros, transformações e agregações sem modificar a coleção original. Sempre faremos isso em outra coleção, mantendo a coleção original inalterada.
+                        .add        para adicionar um elemento;
+                        .remove     para remover;
+                        .contains   para verificar se um elemento existe na lista;
+                        .get        para obter um elemento em uma posição específica e
+                        .size       para saber o tamanho total da lista. 
+                Set:
+                    O Set é usado quando a ordenação não é o foco. Ele não permite duplicidade, então não poderíamos ter dois "João". 
+                    As implementações do Set incluem:
+                        HashSet, LinkedHashSet e TreeSet.
+                            O HashSet é o mais rápido, pois não se preocupa com ordenação e não permite duplicidade. O LinkedHashSet mantém a ordem de inserção, enquanto o TreeSet permite ordenação, mas é mais lento.
+                        As operações mais comuns ao utilizar esse tipo de coleção são:
+                        .add        para adicionar um elemento;
+                        .remove     para remover;
+                        .contains   para verificar se um elemento existe na lista;
+                        .get        para obter um elemento em uma posição específica e
+                        .size       para saber o tamanho total da lista. 
+                Map:
+                    O objetivo é semelhante ao do Set. O HashMap é o mais rápido e não considera a ordem. 
+                        O LinkedHashMap mantém a ordem de inserção, e o TreeMap é ordenado pela chave. 
+                        No Map, o primeiro item é a chave e o segundo é o valor.
+                    Ele possui operações diferentes dos anteriores, como:
+                        .Put;
+                        .Get;
+                        .Remove;
+                        .ContainsKey e
+                        .keySet.
+    Streams
+        Streams permite realizar operações funcionais e processar essas coleções(colections) de forma funcional.
+            Ao trabalhar com a API de Streams, geralmente desejamos utilizar métodos para realizar filtros, transformações e agregações sem modificar a coleção original. Sempre faremos isso em outra coleção, mantendo a coleção original inalterada.
 
-        Teremos operações intermediárias que processam dados, gerando novos Streams, e operações terminais que encerram o fluxo, como uma impressão ou uma soma, finalizando a operação.
+            Teremos operações intermediárias que processam dados, gerando novos Streams, e operações terminais que encerram o fluxo, como uma impressão ou uma soma, finalizando a operação.
 
-        As operações intermediárias mais comuns são:
-            filter() e map().
-                O filter é utilizado para filtrar, enquanto o map permite realizar transformações.
+            As operações intermediárias mais comuns são:
+                filter() e map().
+                    O filter é utilizado para filtrar, enquanto o map permite realizar transformações.
 
-        As operações terminais mais comuns são:
-            reduce() e collect().
-                O reduce() é usado para reduzir e finalizar algum cálculo, e o collect() pode transformar os dados em outra lista.
+            As operações terminais mais comuns são:
+                reduce() e collect().
+                    O reduce() é usado para reduzir e finalizar algum cálculo, e o collect() pode transformar os dados em outra lista.
 
-    
+        
 
